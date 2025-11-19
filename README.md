@@ -13,7 +13,7 @@ Key features:
 - Body snippet + summary (bonus)
 - Styling using SCSS
 
-The backend API runs on Node.js/Express and is available in a separate repository at [this link](https://github.com/NamriHolmes-indo/BackEnd-Search-for-Vue.git).
+The backend API runs on Node.js/Express and is available in a separate repository at [this link](https://github.com/NamriHolmes-indo/Dev_Naufal-Ammar-Badri_TaskABackEnd.git).
 
 ## Tech Stack
 - React + Vite
