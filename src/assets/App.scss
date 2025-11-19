@@ -1,0 +1,82 @@
+@import "utils";
+
+.search-container {
+  width: 90vw;
+  max-width: 1440px;
+  font-family: $font-main;
+  color: $color-text;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: $color-primary;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: darken($color-primary, 6%);
+      }
+    }
+  }
+
+  .error {
+    color: $color-error;
+    margin-top: 20px;
+  }
+
+  .loading,
+  .empty {
+    margin-top: 20px;
+    color: $color-text;
+  }
+
+  .summary {
+    margin-top: 20px;
+    @include card;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .results {
+    margin-top: 20px;
+
+    .item {
+      @include card;
+      margin-bottom: 10px;
+
+      h3 {
+        margin: 0 0 5px 0;
+      }
+
+      p {
+        margin: 0;
+        color: #555;
+      }
+    }
+  }
+}
