@@ -1,16 +1,47 @@
-# React + Vite
+# React + Vite Frontend — Mini Full-Stack Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React (Vite + SCSS) frontend for Task A — Mini Full-Stack Search.
+This application provides a simple UI for searching FAQs based on queries sent to the backend API.
 
-Currently, two official plugins are available:
+Key features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search bar + button
+- Loading state
+- Empty state
+- Error state
+- Displays the top 3 search results
+- Body snippet + summary (bonus)
+- Styling using SCSS
 
-## React Compiler
+The backend API runs on Node.js/Express and is available in a separate repository at [this link](https://github.com/NamriHolmes-indo/BackEnd-Search-for-Vue.git).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React + Vite
+- SCSS for styling
+- Native fetch API
+- Backend: Node.js + Express (must be downloaded separately)
 
-## Expanding the ESLint configuration
+## Install Dependencies
+After cloning, make sure you are in the backend folder.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## Running the Frontend
+Run the development server:
+```bash
+npm run dev
+
+```
+
+The application will run on:
+```bash
+http://localhost:5173
+```
+
+## Notes
+- Frontend sudah memvalidasi query kosong
+- Error dari backend ditampilkan ke user
+- Semua hasil muncul dengan layout SCSS responsif
+- Tidak menggunakan library tambahan agar tetap sederhana sesuai requirement
