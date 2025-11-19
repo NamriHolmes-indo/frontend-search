@@ -41,7 +41,7 @@ http://localhost:5173
 ```
 
 ## Notes
-- Frontend sudah memvalidasi query kosong
-- Error dari backend ditampilkan ke user
-- Semua hasil muncul dengan layout SCSS responsif
-- Tidak menggunakan library tambahan agar tetap sederhana sesuai requirement
+- The frontend validates empty queries.
+- Errors from the backend are displayed to the user.
+- All results appear in a responsive SCSS layout.
+- No additional libraries are used to maintain simplicity and meet requirements.
